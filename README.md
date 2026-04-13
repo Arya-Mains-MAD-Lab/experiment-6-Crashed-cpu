@@ -1,9 +1,3 @@
-
----
-
-### Experiment 6 README.md
-
-```markdown
 # Experiment 6: SQLite Database Application
 
 ## Student Information
