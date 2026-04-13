@@ -43,11 +43,3 @@ The application successfully creates a SQLite database and displays confirmation
 This experiment demonstrated how to integrate **SQLite database** in Flutter using the `sqflite` package for persistent local storage.
 
 ---
-
-## How to Run
-1. Ensure **Flutter SDK** is installed and added to PATH.  
-2. Add dependencies in `pubspec.yaml`:  
-   ```yaml
-   dependencies:
-     sqflite: ^2.0.0+4
-     path: ^1.8.0
