@@ -27,13 +27,13 @@ To integrate **SQLite database** in a Flutter application for local data storage
 ## Output
 The application successfully creates a SQLite database and displays confirmation on screen.  
 
---- **Adding User**
+- **Adding User**
 <img src="./image.png" alt="SQLite Database Output" width="300"/>  
 
---- **Updating User**
+- **Updating User**
 <img src="./upd.png" alt="SQLite Database Output" width="300"/>  
 
---- **Display Screen**
+- **Display Screen**
 <img src="./disp.png" alt="Sqlite db output" width="300"/>
 ---
 
