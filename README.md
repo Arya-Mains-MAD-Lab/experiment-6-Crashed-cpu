@@ -1,4 +1,10 @@
-# Experiment 6: Graphics Transformations & Animations in Flutter
+
+---
+
+### Experiment 6 README.md
+
+```markdown
+# Experiment 6: SQLite Database Application
 
 ## Student Information
 * **Name:** Ayush  
@@ -11,50 +17,43 @@
 ---
 
 ## Aim
-To study and implement **graphics transformations and simple animations** in Flutter using `CustomPaint`, `Transform`, and `AnimationController`.
+To integrate **SQLite database** in a Flutter application for local data storage.
 
 ---
 
 ## Procedure
-1. Created a new Flutter project.  
-2. Defined a `CustomPainter` class to draw basic shapes.  
-3. Applied transformations using the `Transform` widget:  
-   - Translation (move shapes)  
-   - Rotation (rotate shapes)  
-   - Scaling (resize shapes)  
-4. Implemented `AnimationController` and `Tween` for smooth transitions.  
-5. Used `setState()` to update the UI dynamically during animation.  
-6. Displayed multiple transformed shapes on the canvas.  
+1. Added `sqflite` and `path` dependencies in `pubspec.yaml`.  
+2. Initialized database using `openDatabase()` with `getDatabasesPath()` and `join()`.  
+3. Created a `student` table with `id` (PRIMARY KEY) and `name` fields.  
+4. Implemented `initDB()` inside `initState()` to set up the database.  
+5. Displayed confirmation message once database was created successfully.  
 
 ---
 
 ## Output
-The application successfully demonstrates transformations and animations on graphics primitives.  
+The application successfully creates a SQLite database and displays confirmation on screen.  
 
-- **Output**  
-<img src="./output.png" alt="output" width="300"/>  
-<!-- 
-- **Rotated Rectangle**  
-<img src="./rotate_output.png" alt="Rotated Rectangle" width="300"/>  
+--- **Adding User**
+<img src="./image.png" alt="SQLite Database Output" width="300"/>  
 
-- **Scaled Circle**  
-<img src="./scale_output.png" alt="Scaled Circle" width="300"/>  
+--- **Updating User**
+<img src="./upd.png" alt="SQLite Database Output" width="300"/>  
 
-- **Animated Translation**  
-<img src="./translate_output.png" alt="Translated Shape" width="300"/>   -->
-
+--- **Display Screen**
+<img src="./disp.png" alt="Sqlite db output" width="300"/>
 ---
 
+
+
 ## Conclusion
-This experiment demonstrated how to apply **transformations and animations** to graphics primitives in Flutter, enabling dynamic and interactive visual effects.
+This experiment demonstrated how to integrate **SQLite database** in Flutter using the `sqflite` package for persistent local storage.
 
 ---
 
 ## How to Run
 1. Ensure **Flutter SDK** is installed and added to PATH.  
-2. Clone the repository and navigate to the experiment folder:  
-   ```bash
-   git clone https://github.com/<classroom-org>/<repo-name>.git
-   cd <repo-name>/Experiment_6
-   flutter pub get
-   flutter run
+2. Add dependencies in `pubspec.yaml`:  
+   ```yaml
+   dependencies:
+     sqflite: ^2.0.0+4
+     path: ^1.8.0
